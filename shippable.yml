@@ -11,6 +11,14 @@ build:
     - python --version
 
 integrations:
+  hub:
+    - integrationName: docker-pranay
+      type: docker
+      branches:
+        only:
+          - master
+          - notifications_for_postCI
+
   notifications:
     - integrationName: pranay-hipchat
       type: hipchat
