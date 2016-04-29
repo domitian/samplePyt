@@ -12,37 +12,37 @@ build:
 
 integrations:
   notifications:
-      - integrationName: pranay-hipchat
-        type: hipchat
-        recipients:
-          - '#Pillar%20of%20Autumn'
-          - '#shippable'
-        on_start: always
-        on_success: always
-        on_failure: always
-        on_pull_request: always
+    - integrationName: pranay-hipchat
+      type: hipchat
+      recipients:
+        - '#Pillar%20of%20Autumn'
+        - '#shippable'
+      on_start: always
+      on_success: always
+      on_failure: always
+      on_pull_request: always
 
-      - integrationName: pranay-webhook
-        type: webhook
-        payload:
-          - NEXT_PROJECT=true
-          - BUILD_NUM=$SHIPPABLE_JOB_NUMBER
-          - API_URL=$SHIPPABLE_API_URL
-          - CONTAINER_NAME=$SHIPPABLE_CONTAINER_NAME
-          - FOO=bar
-          - FIZZ=buzz
-        branches:
-          only:
-            - master
-            - notifications_for_postCI
+    - integrationName: pranay-webhook
+      type: webhook
+      payload:
+        - NEXT_PROJECT=true
+        - BUILD_NUM=$SHIPPABLE_JOB_NUMBER
+        - API_URL=$SHIPPABLE_API_URL
+        - CONTAINER_NAME=$SHIPPABLE_CONTAINER_NAME
+        - FOO=bar
+        - FIZZ=buzz
+      branches:
+        only:
+          - master
+          - notifications_for_postCI
 
-      - integrationName: pranay-webhook-2
-        type: webhook
-        payload:
-          - NEXT_PROJECT=true
-          - IS_LEGACY=$SHIPPABLE_IS_LEGACY_IMAGE
-          - RETRY_INTERVAL=$SHIPPABLE_API_RETRY_INTERVAL
-        branches:
-          only:
-            - master
-            - notifications_for_postCI
+    - integrationName: pranay-webhook-2
+      type: webhook
+      payload:
+        - NEXT_PROJECT=true
+        - IS_LEGACY=$SHIPPABLE_IS_LEGACY_IMAGE
+        - RETRY_INTERVAL=$SHIPPABLE_API_RETRY_INTERVAL
+      branches:
+        only:
+          - master
+          - notifications_for_postCI
