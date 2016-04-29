@@ -23,7 +23,7 @@ integrations:
       on_pull_request: always
 
     - integrationName: pranay-webhook
-      type: webhook
+      type: runTriggerWebhook
       payload:
         - NEXT_PROJECT=true
         - BUILD_NUM=$SHIPPABLE_JOB_NUMBER
@@ -37,7 +37,7 @@ integrations:
           - notifications_for_postCI
 
     - integrationName: pranay-webhook-2
-      type: webhook
+      type: runTriggerWebhook
       payload:
         - NEXT_PROJECT=true
         - IS_LEGACY=$SHIPPABLE_IS_LEGACY_IMAGE
