@@ -30,7 +30,7 @@ integrations:
       on_failure: always
       on_pull_request: always
 
-    - integrationName: sample-node-webhook-x
+    - integrationName: sample-node-webhook
       type: webhook
       payload:
         - NEXT_PROJECT=true
