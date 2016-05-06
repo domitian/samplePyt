@@ -15,7 +15,6 @@ integrations:
         - integrationName: slack-pipelines
           type: slack
           recipients:
-            - '#test_interns'
             - '#guilty_spark'
           on_start: always
           on_success: always
