@@ -12,13 +12,11 @@ build:
 
 integrations:
     notifications:
-        - integrationName: pranay-slack
+        - integrationName: slack-pipelines
           type: slack
           recipients:
             - '#test_interns'
-            - '#test-interns-2'
-            - room: '#test-interns-3'
-              notify: true
+            - '#guilty_spark'
           on_start: always
           on_success: always
           on_failure: always
