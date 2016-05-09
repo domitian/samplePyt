@@ -32,13 +32,6 @@ integrations:
 
     - integrationName: sample-node-webhook
       type: webhook
-      payload:
-        - NEXT_PROJECT=true
-        - BUILD_NUM=$SHIPPABLE_JOB_NUMBER
-        - API_URL=$SHIPPABLE_API_URL
-        - CONTAINER_NAME=$SHIPPABLE_CONTAINER_NAME
-        - FOO=bar
-        - FIZZ=buzz
       branches:
         only:
           - master
@@ -46,10 +39,6 @@ integrations:
 
     - integrationName: sample-python-webhook
       type: webhook
-      payload:
-        - NEXT_PROJECT=true
-        - IS_LEGACY=$SHIPPABLE_IS_LEGACY_IMAGE
-        - RETRY_INTERVAL=$SHIPPABLE_API_RETRY_INTERVAL
       branches:
         only:
           - master
