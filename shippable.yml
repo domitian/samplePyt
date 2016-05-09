@@ -32,8 +32,6 @@ integrations:
 
     - integrationName: sample-node-webhook
       type: webhook
-      payload:
-
       branches:
         only:
           - master
@@ -41,8 +39,6 @@ integrations:
 
     - integrationName: sample-python-webhook
       type: webhook
-      payload:
-
       branches:
         only:
           - master
