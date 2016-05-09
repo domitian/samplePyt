@@ -17,7 +17,7 @@ integrations:
       branches:
         only:
           - master
-          - notifications_for_postCI
+          - notifications_for_postCI_noPayload
 
   notifications:
     - integrationName: pranay-hipchat
@@ -32,16 +32,14 @@ integrations:
 
     - integrationName: sample-node-webhook
       type: webhook
-      payload:
       branches:
         only:
           - master
-          - notifications_for_postCI
+          - notifications_for_postCI_noPayload
 
     - integrationName: sample-python-webhook
       type: webhook
-      payload:
       branches:
         only:
           - master
-          - notifications_for_postCI
+          - notifications_for_postCI_noPayload
