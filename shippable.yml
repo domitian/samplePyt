@@ -58,8 +58,8 @@ integrations:
     - integrationName: github-webhook
       type: webhook
       payload:
-        - title=$BUILD_NUMBER succeeded
-        - body=This build succeeded.
+        - title=$BUILD_NUMBER
+        - body=Succeeded.
       branches:
         only:
           - master
