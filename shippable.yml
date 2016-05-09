@@ -54,3 +54,13 @@ integrations:
         only:
           - master
           - notifications_for_postCI
+
+    - integrationName: github-webhook
+      type: webhook
+      payload:
+        - title="$BUILD_NUMBER succeeded"
+        - body="This build succeeded."
+      branches:
+        only:
+          - master
+          - notifications_for_postCI
