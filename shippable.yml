@@ -33,8 +33,8 @@ integrations:
     - integrationName: github-webhook
       type: webhook
       payload:
-        - title=Success - $BUILD_NUMBER
-        - body=The $BUILD_NUMBER build succeeded
+        - title=Failure - $REPO_FULL_NAME - $BUILD_NUMBER
+        - body=The $BUILD_NUMBER build failed for $COMPARE_URL
       branches:
         only:
           - master
