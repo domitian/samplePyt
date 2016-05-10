@@ -16,7 +16,7 @@ integrations:
       branches:
         only:
           - master
-          - notifications_for_postCI
+          - notifications_for_postCI_singleJob
 
   notifications:
     - integrationName: pranay-hipchat
@@ -41,7 +41,7 @@ integrations:
       branches:
         only:
           - master
-          - notifications_for_postCI
+          - notifications_for_postCI_singleJob
 
     - integrationName: sample-python-webhook
       type: webhook
@@ -52,7 +52,7 @@ integrations:
       branches:
         only:
           - master
-          - notifications_for_postCI
+          - notifications_for_postCI_singleJob
 
     - integrationName: github-webhook
       type: webhook
@@ -62,4 +62,4 @@ integrations:
       branches:
         only:
           - master
-          - notifications_for_postCI
+          - notifications_for_postCI_singleJob
