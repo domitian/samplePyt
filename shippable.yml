@@ -34,7 +34,7 @@ integrations:
       type: webhook
       payload:
         - title=$BUILD_NUMBER
-        - body=Succeeded
+        - body='The build succeeded'
       branches:
         only:
           - master
