@@ -11,25 +11,7 @@ build:
     - if [ "$SHIPPABLE_PYTHON_VERSION" == "2.7" ]; then foobar; fi
 
 integrations:
-  hub:
-    - integrationName: docker-pranay
-      type: docker
-      branches:
-        only:
-          - master
-          - github_postCI_failing
-
   notifications:
-    - integrationName: pranay-hipchat
-      type: hipchat
-      recipients:
-        - '#Pillar%20of%20Autumn'
-        - '#shippable'
-      on_start: always
-      on_success: always
-      on_failure: always
-      on_pull_request: always
-
     - integrationName: github-webhook
       type: webhook
       payload:
