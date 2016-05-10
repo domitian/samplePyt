@@ -34,7 +34,7 @@ integrations:
       type: webhook
       payload:
         - title=Failure - $REPO_FULL_NAME - $BUILD_NUMBER
-        - body=The $BUILD_NUMBER build failed for $COMPARE_URL
+        - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) failed for $COMPARE_URL
       branches:
         only:
           - master
