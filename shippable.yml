@@ -33,8 +33,8 @@ integrations:
     - integrationName: github-webhook
       type: webhook
       payload:
-        - title='Success - $BUILD_NUMBER'
-        - body='The $BUILD_NUMBER build succeeded'
+        - title=Success - $BUILD_NUMBER
+        - body=The $BUILD_NUMBER build succeeded
       branches:
         only:
           - master
