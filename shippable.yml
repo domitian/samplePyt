@@ -20,6 +20,48 @@ integrations:
         - CONTAINER_NAME=$SHIPPABLE_CONTAINER_NAME
         - FOO=bar
         - FIZZ=buzz
+        - secure: xRHDNDT4HL740HmhWiT0oOjWTL+ZCEAsCp1BgdQuus0YFZu+/JPlGMHhpXvCJX4jUIjhKPZJNCRhX5D3VPQO02hkhz+0TbP1WxwnOR3D7HXLsjaElguqmlxqEcP24nz7mZisXmLMjjNtaNbbMf61RKT6nL5D1bqdD/1jX4feQIh3kU0Q4pOnOxb4WBjjHX4kWphun50db0c223gPNvq0q+LALM7vp4YUaEomeMW7M0G4OiPC1JBTo5c+W8ZK5Q86A7HDwpgoERKxvcNIyIyctdeCqsqtscwODS4dC2qE1oBFG63QsqDMgWgJlErml4blNGRw7/SUKJQY6BQbu6WLlw==
+        
+    - integrationName: email
+      type: email
+      recipients: 
+        - shiphitchcock1@gmail.com
+       # - varsha@shippable.com
+      on_start: always
+      on_success: always
+      on_failure: always
+      on_pull_request: never
+      
+    - integrationName: ship-slack
+      type: slack
+      recipients:
+        - "#public-chnl"
+        - pvt-channel
+      on_start: always
+      on_success: always
+      on_failure: always
+      on_pull_request: never
+      
+    - integrationName: irc
+      type: irc
+      recipients:
+        - "chat.freenode.net#test-cock1"
+      on_start: always
+      on_success: always
+      on_failure: always
+      on_pull_request: always
+      
+    - integrationName: ship-hipchat
+      type: hipchat
+      recipients:
+        - '#hitchcock1'
+        - '#hitchcock1pvt'
+        - '@shiphitchcock1'
+      on_start: always
+      on_success: always
+      on_failure: always
+      on_pull_request: always
+
       branches:
         only:
           - master
