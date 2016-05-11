@@ -40,8 +40,8 @@ integrations:
     - integrationName: github-webhook
       type: webhook
       payload:
-        - title=Failure - $REPO_FULL_NAME - $BUILD_NUMBER
-        - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) failed for $COMPARE_URL
+        - title=Succes - $REPO_FULL_NAME - $BUILD_NUMBER
+        - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) succeeded for $COMPARE_URL
       branches:
         only:
           - master
