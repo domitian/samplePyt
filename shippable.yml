@@ -21,11 +21,7 @@ integrations:
         - CONTAINER_NAME=$SHIPPABLE_CONTAINER_NAME
         - FOO=bar
         - FIZZ=buzz
-      branches:
-        only:
-          - master
-          - notifications_for_postCI
-  
+
     - integrationName: sample-node-webhook
       type: webhook
       payload:
@@ -35,10 +31,6 @@ integrations:
         - CONTAINER_NAME=$SHIPPABLE_CONTAINER_NAME
         - FOO=bar
         - FIZZ=buzz
-      branches:
-        only:
-          - master
-          - notifications_for_postCI
 
     - integrationName: sample-python-webhook
       type: webhook
@@ -46,17 +38,9 @@ integrations:
         - NEXT_PROJECT=true
         - IS_LEGACY=$SHIPPABLE_IS_LEGACY_IMAGE
         - RETRY_INTERVAL=$SHIPPABLE_API_RETRY_INTERVAL
-      branches:
-        only:
-          - master
-          - notifications_for_postCI
 
     - integrationName: github-webhook
       type: webhook
       payload:
         - title=Success - $REPO_FULL_NAME - $BUILD_NUMBER
         - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) succeeded for $COMPARE_URL
-      branches:
-        only:
-          - master
-          - notifications_for_postCI
