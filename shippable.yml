@@ -15,7 +15,7 @@ env:
 
 integrations:
     notifications:
-        - integrationName: pranay-hipchat
+        - integrationName: pranay-hipchat-2
           type: hipchat
           recipients:
             - '#Pillar%20of%20Autumn'
