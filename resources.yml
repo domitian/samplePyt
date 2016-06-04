@@ -11,9 +11,3 @@ resources:
   source:
     name : "shipimg/api"
     isPull: false
-- name: aws-beta
-  type: aws
-  integration: avinci-aws
-  source:
-    name : "clusterName"
-    region: "us-east-1"
