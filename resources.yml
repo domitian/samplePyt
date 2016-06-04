@@ -5,9 +5,3 @@ resources:
   source:
     name : "Shippable/api"
     branch: master
-- name: apiImage
-  type: image
-  integration: avinci-DH
-  source:
-    name : "shipimg/api"
-    isPull: false
