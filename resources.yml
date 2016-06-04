@@ -3,5 +3,5 @@ resources:
   type: gitRepo
   integration: github
   source:
-    name : "domitian/sample_php"
+    name : "domitian/active_model_serializers"
     branch: master
