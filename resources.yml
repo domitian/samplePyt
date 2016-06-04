@@ -1,7 +1,7 @@
 resources:
-- name: apiGit
+- name: sample_php
   type: gitRepo
-  integration: avinci-scm
+  integration: github
   source:
     name : "Shippable/api"
     branch: master
