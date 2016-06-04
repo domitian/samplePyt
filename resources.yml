@@ -3,5 +3,5 @@ resources:
   type: gitRepo
   integration: github
   source:
-    name : "Shippable/api"
+    name : "domitian/sample_php"
     branch: master
