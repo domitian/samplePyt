@@ -1,7 +1,7 @@
 resources:
-- name: sample_php
-  type: gitRepo
+- name: shipimg-name
+  type: image
   integration: github
   source:
-    name : "domitian/active_model_serializers"
-    branch: master
+    name : "img/23"
+    tag: master
