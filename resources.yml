@@ -1,7 +1,14 @@
 resources:
 - name: ubuntu-img
   type: image
-  integration: surendra-hub
+  integration: github
   source:
-    name : ubuntu
+    name : ubuntu/nice
+    tag: latest
+resources:
+- name: ubuntus
+  type: image
+  integration: github
+  source:
+    name : ubuntu/awesome
     tag: latest
