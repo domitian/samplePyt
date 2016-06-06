@@ -1,7 +1,7 @@
 resources:
-- name: shipimg-name
+- name: ubuntu-img
   type: image
-  integration: github
+  integration: surendra-hub
   source:
-    name : "img/23"
-    tag: master
+    name : ubuntu
+    tag: latest
