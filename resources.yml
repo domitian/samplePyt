@@ -1,7 +1,7 @@
 resources:
 - name: ubuntu-img
   type: image
-  integration: surendra-hub
+  integration: surendra-hub2
   source:
     name : ubuntu
     tag: v3
