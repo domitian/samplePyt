@@ -1,19 +1,7 @@
 resources:
-- name: ubuntu-img
-  type: image
-  integration: surendra-hub2
+- name: actmdsl
+  type: gitRepo
+  integration: github
   source:
-    name : ubuntu
-    tag: v3
-- name: busybox-img
-  type: image
-  integration: surendra-hub2
-  source:
-    name : busybox
-    tag: v0
-- name: nginx-img
-  type: image
-  integration: surendra-hub2
-  source:
-    name : nginx
-    tag: v0
+    name : domitian/active_model_serializers
+    branch: appveyor
