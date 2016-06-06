@@ -1,1 +1,14 @@
-
+resources:
+- name: ubuntu-img
+  type: image
+  integration: surendra-hub
+  source:
+    name : ubuntu
+    tag: v2
+resources:
+- name: busybox-img
+  type: image
+  integration: surendra-hub2
+  source:
+    name : busybox
+    tag: v1
