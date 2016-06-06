@@ -5,7 +5,6 @@ resources:
   source:
     name : ubuntu
     tag: v2
-resources:
 - name: busybox-img
   type: image
   integration: surendra-hub2
