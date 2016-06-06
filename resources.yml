@@ -3,5 +3,5 @@ resources:
   type: gitRepo
   integration: github
   source:
-    name : ubuntu
+    name : domitian/active_model_serializers
     branch: master
