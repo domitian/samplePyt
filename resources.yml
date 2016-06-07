@@ -1,7 +1,7 @@
 resources:
-- name: actmdsl
+- name: sample_node
   type: gitRepo
   integration: github
   source:
-    name : domitian/active_model_serializers
-    branch: appveyor
+    name : domitian/sample_node
+    branch: master
