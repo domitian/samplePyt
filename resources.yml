@@ -4,10 +4,4 @@ resources:
   integration: github
   source:
     name : domitian/sample_node
-    branch: test
-- name: sample_nodes2
-  type: gitRepo
-  integration: github
-  source:
-    name : domitian/sample_node
-    branch: test
+    branch: teee
