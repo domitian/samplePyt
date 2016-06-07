@@ -1,5 +1,5 @@
 resources:
-- name: sample_node
+- name: sample_nodes
   type: gitRepo
   integration: github
   source:
