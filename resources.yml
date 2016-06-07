@@ -1,6 +1,6 @@
 resources:
 - name: sample_node
-  tye: gitRepo
+  type: gitRep
   integration: github
   source:
     name : domitian/sample_node
