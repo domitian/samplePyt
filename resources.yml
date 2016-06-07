@@ -4,4 +4,4 @@ resources:
   integration: github
   source:
     name : domitian/sample_node
-    branch: master
+    branch: test
